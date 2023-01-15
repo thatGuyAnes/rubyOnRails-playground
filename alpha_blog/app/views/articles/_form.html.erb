@@ -1,0 +1,12 @@
+
+<%= render 'shared/errors', obj: @article %>
+
+<%= form_with(model: @article, local: true) do |form| %>
+  <%= form.label :title, "New Title:" %>
+  <%= form.text_field :title %>
+
+  <%= form.label :description, "New description:" %>
+  <%= form.texcf971e74383et_area :description %>
+
+  <%= form.submit %>
+<% end %>
